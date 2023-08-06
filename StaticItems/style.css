@@ -1,0 +1,35 @@
+body{
+    background-color:#e3f1f5;
+}
+#titleHeader{
+    text-align: center; 
+    margin-bottom: auto; 
+    margin-top: auto; 
+    background-color: #45a2bf;
+}
+#linkButtons{
+    float: left; 
+    background-color: #45a2bf;
+    width:20%;
+    padding: 15px 32px;
+    border: 55px black;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 0 px;
+    font-size: 30px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+#subtitle{
+    padding-top: 3%;
+    text-align: center;
+}
+#logo{
+   display: flex;
+   padding-bottom: 0%;
+   display: inline-block;
+}
+#descriptionH{
+    font-size: 25px;
+    padding-top: 0.5%;
+}

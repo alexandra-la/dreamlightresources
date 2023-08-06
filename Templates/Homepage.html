@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %} <!--Static load in for images and style sheet-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Homepage</title>
+</head>
+<body>
+    <header>
+        <h1 div id="titleHeader"> Disney Dreamlight Valley Resources</h1>
+        <hr width = 100% size=5 color="black" noshade style="margin-top: auto; margin-bottom:0px;"/> <!--black divider bar-->
+        <button type="button" div id="linkButtons" onclick="window.location.href='';">Home</div></button>
+        <button type="button" div id="linkButtons" onclick="window.location.href='characters/';">Characters</div></button> <!--Linking to Characters page-->
+        <button type="button" div id="linkButtons" onclick="window.location.href='crops/';">Crops</div></button> <!--Linking to Crops page-->
+        <button type="button" div id="linkButtons" onclick="window.location.href='fishing/';">Fishing</div></button> <!---Linking to Fishing page-->
+        <button type="button" div id="linkButtons" onclick="window.location.href='mining/';">Mining</div></button> <!---Linking to Mining page-->
+
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">  
+                <p class="text-left">
+                    <div id="descriptionH"> <!--text on website-->
+                        Disney Dreamlight Valley is a life simulation game currently in early access. The game is similar to those of Stardew Valley, Cozy Grove, and Animal Crossing.
+                        The valley is populated by famous Disney characters such as Mickey Mouse, Elsa, Merlin, and Ariel. 
+                    </div>
+                    <br><iframe width="560" height="315" src="https://www.youtube.com/embed/UY5KdtnK4dU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </p>
+            </div>
+
+            <div class = "col">
+                <div id="subtitle">
+                    <div id="Logo" aria-label="Disney Dreamlight Logo with Mickey, Merlin, The Fairy God Mother, and Player Character"> <img src="{% static '\logo.png' %}"alt="Disney Dreamlight Logo with Mickey, Merlin, The Fairy GodMother, and Player Character" ></div> <!--loading in static image-->
+                    <p>
+                     Official Splash Screen of Disney Dreamlight Valley
+                    </p>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+    
+ 
+<p>
+</p>
+
+</body>
+</html>

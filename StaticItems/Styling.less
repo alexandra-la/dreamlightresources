@@ -8,8 +8,23 @@ body{
     }
     .linkButtons{
         background-color: @headerColor;
+        float: left;
+        width:20%;
+        padding: 15px 32px;
+        border: 55px black;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 0 px;
+        font-size: 30px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
     }
     .linkButtons:hover{
         background-color: @hoverColor;
+    }
+    .selectedButton{
+        .linkButtons();
+        opacity: 0.6;
+        cursor: not-allowed;
     }
 }

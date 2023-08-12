@@ -4,3 +4,9 @@ body {
 body #titleHeader {
   background-color: #45a2bf;
 }
+body .linkButtons {
+  background-color: #45a2bf;
+}
+body .linkButtons:hover {
+  background-color: white;
+}

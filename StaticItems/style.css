@@ -5,7 +5,7 @@
     margin-top: auto; 
     
 }
-#linkButtons{
+.linkButtons{
     float: left; 
     background-color: #45a2bf;
     width:20%;

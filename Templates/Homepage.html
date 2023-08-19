@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <link rel="stylesheet" href="{% static 'Styling.css' %}">
+    <script type="text/javascript" src="mustache.js" ></script>
     <title>Homepage</title>
 </head>
 <body>
@@ -42,6 +43,30 @@
             
                 </div>
             </div>
+        </div>
+        <div class="contactForm">
+            <script>
+                function validateForm() {
+                    let x = document.forms["myForm"]["fname"].value;
+                    if (x == "") {
+                        alert("Name must be filled out");
+                        return false;
+                    }
+                }
+                var view = {
+                    currentDate: getDate(),
+                    currentDay: getDay(),
+                    nextNewsletter: function (){
+                        return 6 - currentDay;
+                    }
+                };
+            </script>
+            Want to stay up to date on all things Dreamlight Valley? Join our newsletter!
+            <script>var output = mustache.render("We send out our newsletter every Sunday! It's {{currentDate}} which means only {{nextNewsletter}} until the next one!", view);</script>
+            <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                Name: <input type="text" name="fname">
+                <input type="submit" value="Submit">
+                </form>
         </div>
     </div>
     

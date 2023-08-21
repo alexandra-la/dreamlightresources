@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <link rel="stylesheet" href="{% static 'Styling.css' %}">
+    <script src="{% static 'tabscode.js'}"></script>
     <title>Crops</title>
 </head>
 <body>
@@ -21,6 +22,53 @@
         <button type="button" div class="linkButtons" onclick="window.location.href='http://127.0.0.1:8000/mining/';">Mining</div></button> <!---Linking to Mining page-->
 
     </header>
+    <div class="container-fluid">
+        <div class="row">
+            <!--Creating tabs + links-->
+            <div class="tab">
+                <button class="tablinks" onclick="openLocation(event, 'Plaza')" id="defaultOpen">Plaza</button>
+                <button class="tablinks" onclick="openLocation(event, 'Meadow')">Peaceful Meadow</button>
+                <button class="tablinks" onclick="openLocation(event, 'Beach')">Dazzle Beach</button>
+                <button class="tablinks" onclick="openLocation(event, 'Glade')">Glade of Trust</button>
+                <button class="tablinks" onclick="openLocation(event, 'Forest')">Forest of Valor</button>
+                <button class="tablinks" onclick="openLocation(event, 'Plateau')">Sunlit Plateau</button>
+                <button class="tablinks" onclick="openLocation(event, 'Heights')">Frosted Heights</button>
+                <button class="tablinks" onclick="openLocation(event, 'Lands')">Forgotten Lands</button>
+            </div>
+            <!--Tab contents-->
+            <div id="Plaza" class="tabcontent">
+                Placeholder
+            </div>
+
+            <div id="Meadow" class="tabcontent">
+                Placeholder
+            </div>
+
+            <div id="Beach" class="tabcontent">
+                Placeholder
+            </div>
+
+            <div id="Glade" class="tabcontent">
+                Placeholder
+            </div>
+
+            <div id="Forest" class="tabcontent">
+                Placeholder
+            </div>
+
+            <div id="Plateau" class="tabcontent">
+                Placeholder
+            </div>
+
+            <div id="Heights" class="tabcontent">
+                Placeholder
+            </div>
+
+            <div id="Lands" class="tabcontent">
+                Placeholder
+            </div>
+        </div>
+    </div>
 
 
  

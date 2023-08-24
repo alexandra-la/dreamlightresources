@@ -23,11 +23,10 @@
 
     </header>
     <div class="container-fluid">
-        
+        <p>
             <!--Creating tabs + links-->
             <div class="tab">
-                <button class="tablinks" onclick="openSpecifier(event, 'Plaza')" id="defaultOpen">Plaza</button>
-                <button class="tablinks" onclick="openSpecifier(event, 'Meadow')">Peaceful Meadow</button>
+                <button class="tablinks" onclick="openSpecifier(event, 'Meadow')" id="defaultOpen">Peaceful Meadow</button>
                 <button class="tablinks" onclick="openSpecifier(event, 'Beach')">Dazzle Beach</button>
                 <button class="tablinks" onclick="openSpecifier(event, 'Glade')">Glade of Trust</button>
                 <button class="tablinks" onclick="openSpecifier(event, 'Forest')">Forest of Valor</button>
@@ -36,12 +35,11 @@
                 <button class="tablinks" onclick="openSpecifier(event, 'Lands')">Forgotten Lands</button>
             </div>
             <!--Tab contents-->
-            <div id="Plaza" class="tabcontent">
-                Placeholder
-            </div>
 
             <div id="Meadow" class="tabcontent">
-                Placeholder
+                <div class="row">
+                    <div id="cropImage" aria-label="Carrot Crop from Disney Dreamlight Valley"> <img src="{% static '\Crops\Carrot.png' %}"alt="Carrot Crop from Disney Dreamlight Valley" ></div>
+                </div>
             </div>
 
             <div id="Beach" class="tabcontent">
@@ -67,6 +65,7 @@
             <div id="Lands" class="tabcontent">
                 Placeholder9
             </div>
+        </p>
         
     </div>
 

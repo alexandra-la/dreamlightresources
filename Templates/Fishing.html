@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <link rel="stylesheet" href="{% static 'Styling.css' %}">
+    <script src="../static/tabscode.js"></script>
     <title>Fishing</title>
 </head>
 <body>
@@ -21,6 +22,29 @@
         <button type="button" div class="linkButtons" onclick="window.location.href='http://127.0.0.1:8000/mining/';">Mining</div></button> <!---Linking to Mining page-->
 
     </header>
+    <div class="container-fluid">
+
+        <!--Creating tabs + links-->
+        <div class="tab">
+            <button class="tablinks" onclick="openSpecifier(event, 'NoRipples')" id="defaultOpen">No Ripples</button>
+            <button class="tablinks" onclick="openSpecifier(event, 'White')">White Ripples</button>
+            <button class="tablinks" onclick="openSpecifier(event, 'Blue')">Blue Ripples</button>
+            <button class="tablinks" onclick="openSpecifier(event, 'Gold')">Gold Ripples</button>
+        </div>
+        <!--Tab contents-->
+        <div id="NoRipples" class="tabcontent">
+            No ripples
+        </div>
+        <div id="White" class="tabcontent">
+            White ripples
+        </div>
+        <div id="Blue" class="tabcontent">
+            Blue Ripples 
+        </div>
+        <div id="Gold" class="tabcontent">
+            Gold Ripples
+        </div>
+    </div>
 
  
 <p>

@@ -1,4 +1,4 @@
-function openLocation(evt, locName){
+function openSpecifier(evt, specName){
     var i, tabcontent, tablinks;
 
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -11,6 +11,6 @@ function openLocation(evt, locName){
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    document.getElementById(locName).style.display = "block";
+    document.getElementById(specName).style.display = "block";
     evt.currentTarget.className += " active";
 }

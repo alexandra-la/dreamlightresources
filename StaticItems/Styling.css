@@ -58,3 +58,9 @@ body .tabcontent {
   border: 1px solid #ccc;
   border-top: none;
 }
+body #sitemap {
+  display: inline-block;
+  float: left;
+  padding-left: 15%;
+  text-align: center;
+}

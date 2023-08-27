@@ -21,10 +21,16 @@
         <button type="button" div class="linkButtons" onclick="window.location.href='http://127.0.0.1:8000/mining/';">Mining</div></button> <!---Linking to Mining page-->
 
     </header>
-    <img src="{% static '\SiteMap.PNG' %}" alt="Site Map" usemap="#sitemap" width="400" height="379">
+    <div id="sitemap"><img src="{% static '\SiteMap.PNG' %}" alt="Site Map" usemap="#sitemap" ></div>
     
     <map name="sitemap">
-        <area shape="rect" coords="34,44,270,350" alt="Homepage" href="http://127.0.0.1:8000">
+        <area shape="rect" href="http://127.0.0.1:8000" coords="853,61,1145,268" alt="Homepage">
+        <area shape="rect" href="http://127.0.0.1:8000/characters/" coords="123,423,415,621" alt="Characters">
+        <area shape="rect" href="http://127.0.0.1:8000/crops/" coords="776,623,489,425" alt="Crops">
+        <area shape="rect" href="http://127.0.0.1:8000/fishing/" coords="849,425,1137,625" alt="Fishing">
+        <area shape="rect" href="http://127.0.0.1:8000/mining/" coords="1208,423,1496,627" alt="Mining">
+        <area shape="rect" href="http://127.0.0.1:8000/sitemap/" coords="1570,425,1860,625" alt="Site Map">
+    </map>
     </map>
 
  

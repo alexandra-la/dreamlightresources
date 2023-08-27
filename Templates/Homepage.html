@@ -47,31 +47,19 @@
         </div>
         <div class="contactForm">
             <script>
-
-                var view = {
-                    currentDate: getDate(),
-                    currentDay: getDay(),
-                    nextNewsletter: function (){
-                        return 6 - currentDay;
-                    }
-                };
-                function nextLetter(){
-                    var output = mustache.render("We send out our newsletter every Sunday! It's {% templatetag openvariable %} currentDate {% templatetag closevariable %} which means only {% templatetag openvariable %} nextNewsletter {% templatetag closevariable %} until the next one!", view);
-                };
                 function validateForm() {
-                    let x = document.forms["myForm"]["fname"].value;
-                    if (x == "") {
-                        alert("Name must be filled out");
-                        return false;
-                    }else{
-                        alert(nextLetter);
+                let x = document.forms["myForm"]["fname"].value;
+                if (x == "") {
+                    alert("Email must be filled out");
+                    return false;
                     }
-                };
+                }
             </script>
             Want to stay up to date on all things Dreamlight Valley? Join our newsletter!
             
-            <form name="myForm" action="http://127.0.0.1:8000/" onsubmit="return validateForm()" method="post">
-                Name: <input type="text" name="fname">
+            <form action="" onsubmit="return validateForm()" method="POST">
+                {% csrf_token %}
+                {{form.as_p}}
                 <input type="submit" value="Submit">
                 </form>
         </div>

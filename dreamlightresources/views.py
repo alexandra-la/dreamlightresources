@@ -1,11 +1,9 @@
 from django.shortcuts import render
-
+from .Email import email
 
 # Create your views here.
 def Home_page(request):
-    context ={
-        
-        }
+    context ={'form': email}
     return render(request, "Homepage.html", context)
 
 def Crops(request):
